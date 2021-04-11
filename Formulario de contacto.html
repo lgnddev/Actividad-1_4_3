@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!--BARRA DE NAVEGACION-->
+
+        <div > 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+    
+                    <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Caos News
+                </a>
+                <div class = "container ">
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Menu Principal <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Noticias
+                        
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Todas las noticias</a>
+                        <a class="dropdown-item" href="#">Categorias</a>
+                        <a class="dropdown-item" href="#">Periodistas</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Iniciar Sesion</a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Buscador" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+              </div>
+            </nav>
+          </div><br>
+</head>
+<body class="bg-light">
+    <div class="d-flex justify-content-center">
+        <h1 class="text-color-balck">Formulario de contacto</h1><br>
+    </div><br><br>
+        
+            
+   <!--FORMULARIO-->
+   <form class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="container col-md-4 mb-4">
+        <label for="validationCustom01">NOMBRE</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="invalid-feedback"> 
+          INGRESE UN NOMBRE VALIDO
+        </div>
+        <div class="valid-feedback">
+          GOOD!
+        </div>
+      </div>
+      <div class="container col-md-4 mb-4">
+        <label for="validationCustom02">APELLIDOS</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <div class="invalid-feedback"> 
+          INGRESE UN APELLIDO VALIDO
+        </div>
+        <div class="valid-feedback">
+          GOOD!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="container col-md-4 mb-3">
+        <label for="validationCustom03">CIUDAD</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          INGRESE CIUDAD VALIDA.
+        </div>
+        <div class="valid-feedback">
+          GOOD!
+        </div>
+      </div>
+ 
+      <div class="container col-md-4 mb-3">
+        <label for="validationCustom05">TELEFONO O CORREO</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          INGRESE UN NUMERO VALIDO.
+        </div>
+        <div class="valid-feedback">
+          GOOD!
+        </div>
+      </div>
+    </div>
+    <div class="container form-group">
+      <div class="form-check"><center>
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          ACEPTES TERMINOS Y CONDICIONES
+        </label></center>
+        <div class="container invalid-feedback"><center>
+          Acepte terminos y condiciones para enviar
+        </center>          
+        </div>
+      </div>
+    </div><center>
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </center><br><br>
+    
+  </form>
+
+  <!--SCRIPT-->
+  <div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+  </div>
+
+  <!--IMAGENES-->
+
+  <center><h6>NUESTRAS REDES SOCIALES</h6></center><br>
+  
+  <!--whatsapp-->
+  <div class="d-flex justify-content-center">
+
+    <img src="https://bd-web-marketing.com/wp-content/uploads/2019/08/whatsapp.jpg" height="50px" class="rounded float-left" alt="imagen de icono whatsapp">
+    <P>     
+      Numero: +569 88744095
+    </P>
+    <div>
+      <p class="container">
+        +569 22559821
+      </p>
+    </div>
+    
+  </div>
+<!--INSTAGRAM-->
+  <div class="d-flex justify-content-center">
+    <img src="https://androidayuda.com/app/uploads-androidayuda.com/2016/05/Instagram-Logo.jpg" height="50px" class="rounded float-left" alt="imagen icono instagram">
+    <P>     
+      INSTAGRAM:
+    </P>
+    <div>
+      <p class="container">
+        NewsNew!
+      </p>
+  </div><br>
+  <!--twitter-->
+  <div class="d-flex justify-content-center">
+    <img src="http://globedia.com/imagenes/noticias/2012/6/7/twitter-renueva-logo-pajarito_1_1248137.jpg" height="50px" class="rounded float-left" alt="imagen icono twiter">
+    <P>     
+      TWITTER:
+    </P>
+    <div>
+      <p class="container">
+        @NewsNews01
+      </p>
+  </div> 
+</html>
