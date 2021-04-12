@@ -1,0 +1,18 @@
+h1{
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-style: italic;
+
+}
+h4{font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+
+}
+h3{font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+
+}
+
+p{
+    font-family: BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue";
+    font-size: 20px;
+}
